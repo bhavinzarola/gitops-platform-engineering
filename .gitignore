@@ -1,0 +1,42 @@
+.terraform/
+*.tfstate
+*.tfstate.backup
+.DS_Store
+*.log
+sbom.json
+
+# terraform state & secrets (never commit)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+crash.log
+override.tf
+
+# local secrets / env
+.env
+.env.*
+*.pem
+*.key
+*.crt
+vault-init.json
+kubeconfig*
+
+# kustomize build output
+kustomize-build/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# archives
+*.zip
